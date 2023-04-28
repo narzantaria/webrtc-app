@@ -17,6 +17,7 @@ export default function Private() {
           minHeight: "100vh",
           backgroundColor: "#FFF",
           overflow: "hidden",
+          p: 3
         }}
       >
         <AppStyles />

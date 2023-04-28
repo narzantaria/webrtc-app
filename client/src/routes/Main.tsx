@@ -1,10 +1,4 @@
 import React from "react";
-import MainBox from "../components/MainBox";
-import HeaderWrapper from "../components/HeaderWrapper";
-import { Button, IconButton } from "@mui/material";
-import TopNav from "../components/TopNav";
-import { AiOutlineHome } from "react-icons/ai";
-import ContentWrapper from "../components/ContentWrapper";
 import { XButton2 } from "../components/Buttons";
 import { useNavigate } from "react-router-dom";
 
@@ -24,20 +18,6 @@ export default function Main() {
     const id = makeId(4);
     navigate(`/room/${id}`);
   }
-  
-  return (
-    <MainBox>
-      <HeaderWrapper>
-        <IconButton>
-          <AiOutlineHome />
-        </IconButton>
-        <TopNav>
-          <Button sx={{ color: "initial" }}>Main</Button>
-        </TopNav>
-      </HeaderWrapper>
-      <ContentWrapper>
-        <XButton2 onClick={create}>Create room</XButton2>
-      </ContentWrapper>
-    </MainBox>
-  );
+
+  return <XButton2 onClick={create}>Create room</XButton2>;
 }
