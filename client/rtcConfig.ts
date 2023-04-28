@@ -1,0 +1,12 @@
+export const rtcConfig = {
+  iceServers: [
+    {
+      urls: "stun:stun.stunprotocol.org",
+    },
+    {
+      urls: "turn:numb.viagenie.ca",
+      credential: "muazkh",
+      username: "webrtc@live.com",
+    },
+  ],
+};
